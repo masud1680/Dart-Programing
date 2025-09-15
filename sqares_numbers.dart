@@ -1,7 +1,7 @@
 void main(){
   
   
-// print 1 to   50 odd numbers
+// print 1 to   20 Squares numbers
   
   String output = "";
   
@@ -15,4 +15,19 @@ void main(){
   print(output);
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
