@@ -1,20 +1,18 @@
-
-
 void main(){
   
-
   
-
+// print 1 to   50 odd numbers
+  
+  String output = "";
   
   for(int i = 1; i <= 20; i++){
     
     int sqNum = i * i;
-  
-    print("Sqares numbers : $sqNum");
+    output += "$sqNum ";
+    
   }
   
-
-  
-  
-  
+  print(output);
 }
+  
+
