@@ -8,9 +8,12 @@ void main(){
   for(int i = -10; i <= 5; i++){
     
     if(i < 0){
-          print("$i is Negative.");
+       print("$i is Negative.");
+       
     }else if(i == 0){
+      print("..............");
       print("$i is Zero.");
+      print("..............");
     }else if(i > 0){
       print("$i is Positive.");
     }
