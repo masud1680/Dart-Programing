@@ -3,7 +3,7 @@
 void main(){
 
   
-// print 1 to   50 event numbers
+// print -10 t0 5 find_nagative_positive_zero numbers
   
   for(int i = -10; i <= 5; i++){
     
