@@ -1,62 +1,32 @@
-void main(){
-  List<dynamic> studentName = ["Masud", "Abeg"];
-  
-  print(studentName);
+int calculationFactorial(int n) {
+  if (n < 0) {
+    return -1;
+  }
 
-  
-studentName.add("Akash");
-  
-print("result =" + studentName[2]);
-  
-print(studentName);
-  
-print("\n******** All Student Name ******");
+  if (n == 0) {
+    return 0;
+  }
 
-for (int i = 0; i < studentName.length; i++){
-   
-    
-    print("Index No. $i = " + studentName[i]);
-  
-};
-  
- // map er code 
-  
-  Map studentInfo = {
-    "Name" : "Masud",
-    "Subject" : "CST",
-    "CGPA" : 4.00,
-    
-  };
-  
-  print("\n******** This full Map **********");
-  print(studentInfo);
-  
-  print("\n **********  Keys  ******* Values ***********");
-  print("${studentInfo.keys} , ${studentInfo.values}");
-  
-  
-  print("******* GPA Calculation System **********");
-  
-  int mark = 34;
-  
-  if(mark >= 90){
-    print("Result = GOLDEN");
-  }else if(mark >= 80){
-    print("Result = A+");
-  }else if(mark >= 70){
-    print("Result = A");
-  }else if(mark >= 60){
-    print("Result = A-");
-  }else if(mark >= 50){
-    print("Result = B");
-  }else if(mark >= 40){
-    print("Result = C");
-  }else if(mark >= 80){
-    print("Result = A+");
-  }else if(mark >= 33){
-    print("Result = D");
-  }else{
-    print("Result = F");
-  };
-  
+  int result = 1;
+
+  for (int i = n; i >= 1; i--) {
+    result *= i;
+  }
+  return result;
+}
+
+void main() {
+  // Factorial Assignment2
+
+  int fac = 5;
+
+  int resultOfFactorial = calculationFactorial(fac);
+
+  if (resultOfFactorial == -1) {
+    print('Try Positive Number !!');
+  } else if (resultOfFactorial == 0) {
+    print('Try Upper number !!');
+  } else {
+    print("Factorial result : ${resultOfFactorial}");
+  }
 }
